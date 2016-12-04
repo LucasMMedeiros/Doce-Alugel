@@ -2,6 +2,7 @@ package br.ucb.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -9,10 +10,14 @@ import javax.persistence.Id;
 public class Empresa implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
+	@Column(name="idEmpresa")
 	private long id;
+	@Column(name="nomeEmpresa")
 	private String nome;
 	private int CNPJ;
-	
+	@Column(name="empresaEndereco")
+	private String endereco;
+		
 	public Empresa(){
 		
 	}
@@ -41,4 +46,12 @@ public class Empresa implements Serializable{
 		CNPJ = cNPJ;
 	}
 
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	
 }

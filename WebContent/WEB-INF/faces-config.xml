@@ -9,5 +9,15 @@
 		<managed-bean-class>br.ucb.controler.ClienteMB</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>quartoMB</managed-bean-name>
+		<managed-bean-class>br.ucb.controler.QuartoMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>empresaMB</managed-bean-name>
+		<managed-bean-class>br.ucb.controler.EmpresaMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 
 </faces-config>

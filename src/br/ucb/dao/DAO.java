@@ -9,10 +9,11 @@ public class DAO {
 	private EntityManagerFactory emf;
 	
 	public EntityManager getEntityManager(){
+		
 		return emf.createEntityManager();
 	}
 
 	public DAO(){
-		emf = Persistence.createEntityManagerFactory("sistemas");
+		emf = Persistence.createEntityManagerFactory("sweethome");
 	}
 }
